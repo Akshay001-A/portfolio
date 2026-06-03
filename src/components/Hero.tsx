@@ -5,7 +5,6 @@ import hero from "../assets/hero.jpeg";
 import {
   FaGithub,
   FaLinkedin,
-  FaEnvelope,
   FaDownload,
 } from "react-icons/fa";
 
