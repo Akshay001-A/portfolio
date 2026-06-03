@@ -50,7 +50,7 @@ function Hero() {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="mt-25"
+          className="mt-22"
         >
 
           <p className="text-cyan-400 text-xl font-medium mb-4">
