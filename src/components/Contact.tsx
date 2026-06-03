@@ -1,3 +1,5 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
     FaEnvelope,
     FaPhone,
@@ -7,10 +9,42 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+    const form = useRef<HTMLFormElement>(null);
+
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (!form.current) return;
+
+        setLoading(true);
+
+        emailjs
+            .sendForm(
+                "service_hmychlf",
+                "template_zregtqc",
+                form.current,
+                "GyIYdrqtyIlhRXjnU"
+            )
+            .then(
+                () => {
+                    alert("Message sent successfully!");
+                    form.current?.reset();
+                    setLoading(false);
+                },
+                (error) => {
+                    console.log(error);
+                    alert("Failed to send message.");
+                    setLoading(false);
+                }
+            );
+    };
+
     return (
         <section
             id="contact"
-            className="pt-0 pb-15 px-6 scroll-mt-24"
+            className="pt-0 pb-16 px-6 scroll-mt-24"
         >
             <div className="max-w-6xl mx-auto">
 
@@ -28,7 +62,7 @@ function Contact() {
 
                 <div className="grid md:grid-cols-2 gap-10">
 
-                    {/* Contact Information */}
+                    {/* Contact Info */}
                     <div className="space-y-5">
 
                         <a
@@ -51,7 +85,7 @@ function Contact() {
                             href="https://github.com/Akshay001-A"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300 hover:translate-x-2"
                         >
                             <FaGithub className="text-cyan-400 text-xl" />
                             <span>GitHub Profile</span>
@@ -61,7 +95,7 @@ function Contact() {
                             href="https://www.linkedin.com/in/akshayofficial0207/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300 hover:translate-x-2"
                         >
                             <FaLinkedin className="text-cyan-400 text-xl" />
                             <span>LinkedIn Profile</span>
@@ -71,7 +105,7 @@ function Contact() {
                             href="https://www.instagram.com/akshay_authentic"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300 hover:translate-x-2"
                         >
                             <FaInstagram className="text-cyan-400 text-xl" />
                             <span>@akshay_authentic</span>
@@ -80,55 +114,39 @@ function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <form className="space-y-5">
+                    <form
+                        ref={form}
+                        onSubmit={sendEmail}
+                        className="space-y-5"
+                    >
 
                         <input
                             type="text"
+                            name="from_name"
+                            required
                             placeholder="Your Name"
-                            className="
-                w-full
-                p-4
-                rounded-2xl
-                bg-white/5
-                border
-                border-white/10
-                focus:border-cyan-400
-                outline-none
-              "
+                            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none"
                         />
 
                         <input
                             type="email"
+                            name="from_email"
+                            required
                             placeholder="Your Email"
-                            className="
-                w-full
-                p-4
-                rounded-2xl
-                bg-white/5
-                border
-                border-white/10
-                focus:border-cyan-400
-                outline-none
-              "
+                            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none"
                         />
 
                         <textarea
                             rows={6}
+                            name="message"
+                            required
                             placeholder="Your Message"
-                            className="
-                w-full
-                p-4
-                rounded-2xl
-                bg-white/5
-                border
-                border-white/10
-                focus:border-cyan-400
-                outline-none
-              "
+                            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none"
                         />
 
                         <button
                             type="submit"
+                            disabled={loading}
                             className="
                 bg-cyan-500
                 hover:bg-cyan-400
@@ -142,7 +160,7 @@ function Contact() {
                 hover:scale-105
               "
                         >
-                            Send Message →
+                            {loading ? "Sending..." : "Send Message →"}
                         </button>
 
                     </form>
