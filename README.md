@@ -20,6 +20,7 @@
 
 </div>
 
+
 ---
 
 # 🌟 Overview
@@ -69,42 +70,129 @@ I specialize in developing:
 I continuously explore emerging technologies and strive to bridge the gap between software engineering and artificial intelligence.
 
 ---
-
 # ✨ Portfolio Features
+
+<div align="center">
+
+### 🚀 Crafted for Performance, User Experience & Professional Presentation
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&color=36BCF7&center=true&vCenter=true&width=850&lines=Modern+Portfolio+Experience;Responsive+Design+Across+All+Devices;Smooth+Animations+and+Interactive+UI;Built+for+Developers+and+Recruiters"/>
+
+</div>
+
+---
 
 ## 🎨 Modern User Experience
 
+<table>
+<tr>
+<td width="50%">
+
 ✅ Professional Hero Section
+
 ✅ Smooth Framer Motion Animations
-✅ Responsive Design
+
+✅ Fully Responsive Design
+
 ✅ Modern UI Components
+
 ✅ Interactive Navigation
-✅ Optimized Performance
+
+✅ Performance Optimized
+
+</td>
+
+<td width="50%">
+
+✅ Elegant Visual Design
+
+✅ Fast Loading Experience
+
+✅ Mobile-First Architecture
+
+✅ Enhanced Accessibility
+
+✅ Seamless User Journey
+
+✅ Clean & Maintainable Codebase
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 📚 Professional Sections
+## 📚 Professional Portfolio Sections
 
-✅ About Me
-✅ Skills & Technologies
-✅ Education Timeline
-✅ Featured Projects
-✅ Certifications
+<table>
+<tr>
+<td width="50%">
+
+✅ Hero Section
+
+✅ About
+
+✅ Education 
+
+✅ Skills
+
+✅ Projects
+
 ✅ Contact Section
-✅ Resume Integration
+
+</td>
+</tr>
+</table>
+
+
 
 ---
 
-## 📱 Responsive Design
+# 🖼️ Live Portfolio Preview
 
-The portfolio is fully optimized for:
+<div align="center">
 
-* 💻 Desktop
-* 📱 Mobile
-* 📲 Tablets
-* 🖥️ Large Displays
+### 🚀 Explore My Interactive Portfolio Website
+
+A modern, responsive, and professionally designed portfolio showcasing my skills, projects, achievements, and technical expertise in Full Stack Development, Artificial Intelligence, and Machine Learning.
+
+<br>
+
+<img src="src/assets/portfolio.png" alt="Portfolio Preview" width="100%"/>
+
+<br><br>
+
+<a href="https://akshay-r-portfolio.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐%20Live%20Portfolio-Visit%20Website-00C853?style=for-the-badge"/>
+</a>
+
+<a href="https://github.com/Akshay001-A" target="_blank">
+  <img src="https://img.shields.io/badge/💻%20Source%20Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
+
+
+--
+
+
+
+## 🌟 Portfolio Highlights
+
+🔹 Professional Developer Branding
+
+🔹 Interactive User Experience
+
+🔹 AI & Full Stack Project Showcase
+
+🔹 Recruiter-Friendly Layout
+
+🔹 Modern Design Principles
+
+🔹 Scalable & Maintainable Architecture
 
 ---
+
 
 # 🛠️ Technology Stack
 
@@ -225,26 +313,46 @@ An interactive educational platform focused on improving learning efficiency thr
 * Interactive Learning Systems
 
 ---
-
-# 📞 Connect With Me
+# 🌐 Connect With Me
 
 <div align="center">
 
-### Let's Connect and Collaborate 🚀
+### 🚀 Let's Build Something Amazing Together
 
-📧 **Email**
-[akshay02072005@gmail.com](mailto:akshay02072005@gmail.com)
+<p align="center">
+  <a href="mailto:akshay02072005@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
 
-🔗 **LinkedIn**
-https://www.linkedin.com/in/akshayofficial0207/
+  <a href="https://www.linkedin.com/in/akshayofficial0207">
+    <img src="https://img.shields.io/badge/LinkedIn-Akshay%20R-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
 
-💻 **GitHub**
-https://github.com/Akshay001-A
+  <a href="https://github.com/Akshay001-A">
+    <img src="https://img.shields.io/badge/GitHub-Akshay001--A-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
 
-📸 **Instagram**
-https://www.instagram.com/akshay_authentic
+  <a href="https://www.instagram.com/akshay_authentic">
+    <img src="https://img.shields.io/badge/Instagram-akshay__authentic-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+</p>
+
+<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&color=36BCF7&center=true&vCenter=true&width=850&lines=Open+to+Collaboration+and+Innovation;Full+Stack+Development+%7C+AI+%26+Machine+Learning;Let's+Create+Impactful+Technology+Together"/>
 
 </div>
+
+---
+
+### 💼 Professional Interests
+
+🔹 Full Stack Development  
+🔹 Artificial Intelligence & Machine Learning  
+🔹 Software Engineering  
+🔹 Open Source Contributions  
+🔹 Research & Innovation  
+🔹 Internship & Career Opportunities  
 
 ---
 
