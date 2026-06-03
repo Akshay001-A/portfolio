@@ -1,69 +1,153 @@
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+    FaEnvelope,
+    FaPhone,
+    FaGithub,
+    FaLinkedin,
+    FaInstagram,
+} from "react-icons/fa";
 
 function Contact() {
     return (
         <section
             id="contact"
-            className="min-h-screen px-6 py-20"
+            className="pt-0 pb-15 px-6 scroll-mt-24"
         >
-            <h2 className="text-4xl font-bold text-center mb-16">
-                Contact Me
-            </h2>
+            <div className="max-w-6xl mx-auto">
 
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                {/* Heading */}
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl font-bold mb-4">
+                        Contact Me
+                    </h2>
 
-                <div className="space-y-6">
-
-                    <div className="bg-white/5 p-5 rounded-xl">
-                        <FaEnvelope className="inline mr-3 text-cyan-400" />
-                        akshay02072005@gmail.com
-                    </div>
-
-                    <div className="bg-white/5 p-5 rounded-xl">
-                        <FaPhone className="inline mr-3 text-cyan-400" />
-                        +91-9686606689
-                    </div>
-
-                    <div className="bg-white/5 p-5 rounded-xl">
-                        <FaGithub className="inline mr-3 text-cyan-400" />
-                        GitHub Profile
-                    </div>
-
-                    <div className="bg-white/5 p-5 rounded-xl">
-                        <FaLinkedin className="inline mr-3 text-cyan-400" />
-                        LinkedIn Profile
-                    </div>
-
+                    <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+                        Let's connect and discuss opportunities in Software Development,
+                        Artificial Intelligence, Machine Learning, and innovative projects.
+                    </p>
                 </div>
 
-                <form className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-10">
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        className="w-full p-4 rounded-lg bg-white/5 border border-white/10"
-                    />
+                    {/* Contact Information */}
+                    <div className="space-y-5">
 
-                    <input
-                        type="email"
-                        placeholder="Your Email"
-                        className="w-full p-4 rounded-lg bg-white/5 border border-white/10"
-                    />
+                        <a
+                            href="mailto:akshay02072005@gmail.com"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                        >
+                            <FaEnvelope className="text-cyan-400 text-xl" />
+                            <span>akshay02072005@gmail.com</span>
+                        </a>
 
-                    <textarea
-                        rows={5}
-                        placeholder="Your Message"
-                        className="w-full p-4 rounded-lg bg-white/5 border border-white/10"
-                    />
+                        <a
+                            href="tel:+919686606689"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                        >
+                            <FaPhone className="text-cyan-400 text-xl" />
+                            <span>+91 9686606689</span>
+                        </a>
 
-                    <button
-                        className="bg-cyan-500 px-6 py-3 rounded-lg"
-                    >
-                        Send Message
-                    </button>
+                        <a
+                            href="https://github.com/Akshay001-A"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                        >
+                            <FaGithub className="text-cyan-400 text-xl" />
+                            <span>GitHub Profile</span>
+                        </a>
 
-                </form>
+                        <a
+                            href="https://www.linkedin.com/in/akshayofficial0207/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                        >
+                            <FaLinkedin className="text-cyan-400 text-xl" />
+                            <span>LinkedIn Profile</span>
+                        </a>
 
+                        <a
+                            href="https://www.instagram.com/akshay_authentic"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-cyan-400 transition-all duration-300"
+                        >
+                            <FaInstagram className="text-cyan-400 text-xl" />
+                            <span>@akshay_authentic</span>
+                        </a>
+
+                    </div>
+
+                    {/* Contact Form */}
+                    <form className="space-y-5">
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            className="
+                w-full
+                p-4
+                rounded-2xl
+                bg-white/5
+                border
+                border-white/10
+                focus:border-cyan-400
+                outline-none
+              "
+                        />
+
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            className="
+                w-full
+                p-4
+                rounded-2xl
+                bg-white/5
+                border
+                border-white/10
+                focus:border-cyan-400
+                outline-none
+              "
+                        />
+
+                        <textarea
+                            rows={6}
+                            placeholder="Your Message"
+                            className="
+                w-full
+                p-4
+                rounded-2xl
+                bg-white/5
+                border
+                border-white/10
+                focus:border-cyan-400
+                outline-none
+              "
+                        />
+
+                        <button
+                            type="submit"
+                            className="
+                bg-cyan-500
+                hover:bg-cyan-400
+                text-black
+                font-semibold
+                px-8
+                py-4
+                rounded-2xl
+                transition-all
+                duration-300
+                hover:scale-105
+              "
+                        >
+                            Send Message →
+                        </button>
+
+                    </form>
+
+                </div>
             </div>
         </section>
     );
