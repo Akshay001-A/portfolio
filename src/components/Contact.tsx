@@ -8,9 +8,11 @@ import {
     FaInstagram,
 } from "react-icons/fa";
 
+
 function Contact() {
     const form = useRef<HTMLFormElement>(null);
-
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const sendEmail = (e: React.FormEvent) => {
@@ -20,23 +22,34 @@ function Contact() {
 
         setLoading(true);
 
-        emailjs
-            .sendForm(
-                "service_hmychlf",
-                "template_zregtqc",
-                form.current,
-                "GyIYdrqtyIlhRXjnU"
-            )
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current!,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
             .then(
                 () => {
-                    alert("Message sent successfully!");
+                    setSuccess(true);
+                    setError(false);
+
                     form.current?.reset();
                     setLoading(false);
+
+                    setTimeout(() => {
+                        setSuccess(false);
+                    }, 5000);
                 },
                 (error) => {
-                    console.log(error);
-                    alert("Failed to send message.");
+                    console.error(error);
+
+                    setSuccess(false);
+                    setError(true);
                     setLoading(false);
+
+                    setTimeout(() => {
+                        setError(false);
+                    }, 5000);
                 }
             );
     };
@@ -112,6 +125,25 @@ function Contact() {
                         </a>
 
                     </div>
+
+
+                    {/* Success Notification */}
+                    {success && (
+                        <div className="fixed top-24 left-1/2 -translate-x-1/2 z-50">
+                            <div className="bg-[#111827] border border-green-500 text-green-400 px-8 py-4 rounded-xl shadow-2xl backdrop-blur-md">
+                                ✅ Message sent successfully! I'll get back to you soon.
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Error Notification */}
+                    {error && (
+                        <div className="fixed top-24 left-1/2 -translate-x-1/2 z-50">
+                            <div className="bg-[#111827] border border-red-500 text-red-400 px-8 py-4 rounded-xl shadow-2xl backdrop-blur-md">
+                                ❌ Failed to send message. Please try again.
+                            </div>
+                        </div>
+                    )}
 
                     {/* Contact Form */}
                     <form
