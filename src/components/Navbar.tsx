@@ -4,7 +4,9 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
 
         <h1 className="text-2xl font-bold text-cyan-400">
-          Akshay
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Akshay
+          </span>
         </h1>
 
         <ul className="flex gap-8">
