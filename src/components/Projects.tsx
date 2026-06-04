@@ -5,6 +5,7 @@ import potatoImg from "../assets/potato.png";
 import shoemartImg from "../assets/shoemart.png";
 import gymImg from "../assets/gym.png";
 import flashlearnImg from "../assets/flashlearn.png";
+import echobrainImg from "../assets/dashboard.png";
 
 function Projects() {
     const projects = [
@@ -40,6 +41,24 @@ function Projects() {
                 "https://github.com/Akshay001-A/Shoe-Mart-E-commerce-Web-Application",
             tech: ["React", "Node.js", "MongoDB", "Gemini AI"],
         },
+
+        {
+                    image: echobrainImg,
+                    category: "AI Developer Tool",
+                    title: "EchoBrain X",
+                    description:
+                        "AI-powered repository intelligence platform built with Next.js, Node.js, Express, MongoDB, and Gemini AI, enabling developers to upload repositories, generate project summaries, perform semantic code search, analyze architecture, browse source code, and chat with their codebase using natural language.",
+                    github:
+                        "https://github.com/Akshay001-A/EchoBrain",
+                    tech: [
+                        "Next.js",
+                        "React.js",
+                        "Node.js",
+                        "Express.js",
+                        "MongoDB",
+                        "Vector Embeddings"
+                    ],
+          },
 
         {
             image: gymImg,
